@@ -9,11 +9,13 @@ contract DeployMultiSig is Script {
     function run() external returns (MultiSigWallet) {
 
         // ================= OWNERS =================
-        address[] memory owners = new address[](3);
+        address[] memory owners = new address[](2);
 
-        owners[0] = 0xaA7827FF19A96231f6582A830f3df8ea8aF4cfB9; 
-        owners[1] = 0x6c856fc3768Bb3715015c949273eA2CE6B1ad4BE; 
-        owners[2] = 0x255e59557Ccd5bEFb82e2c5F72E61768713a8a74; 
+        // owners[0] = 0xaA7827FF19A96231f6582A830f3df8ea8aF4cfB9; 
+        owners[0] = 0xD7f2089AD5826D1047a2E440912d37cC422854C2; 
+        // owners[1] = 0x6c856fc3768Bb3715015c949273eA2CE6B1ad4BE; 
+        owners[1] = 0xcE79de91b9FBa151daAd455f9Dc9A84417185E25; 
+        // owners[2] = 0x255e59557Ccd5bEFb82e2c5F72E61768713a8a74; 
 
         // ================= THRESHOLD =================
         uint256 requiredConfirmations = owners.length - 1; 
