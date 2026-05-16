@@ -4,8 +4,6 @@ pragma solidity ^0.8.19;
 /// @title Multi-Signature Wallet (Hardened)
 /// @notice Backward-compatible upgrade of your original contract
 
-// ✅ FIX 1: Validate `required` in constructor to prevent invalid state
-
 contract MultiSigWallet {
 
     error NotOwner();
